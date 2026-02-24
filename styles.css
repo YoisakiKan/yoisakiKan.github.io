@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 100%;
+    background-image: url('left-image.png'); /* Замените на путь к вашей левой картинке */
+    background-size: cover;
+}
+
+.sidebar.right {
+    background-image: url('right-image.jpg'); /* Замените на путь к вашей правой картинке */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.title {
+    font-size: 48px;
+    text-shadow: 0 0 10px #ffffffa1; /* Сияющий эффект */
+}
+
+.neon-button {
+    padding: 15px 30px;
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #ffffff; /* Цвет рамки кнопки */
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+    background-color: #bebebe; /* Цвет фона при наведении */
+}
